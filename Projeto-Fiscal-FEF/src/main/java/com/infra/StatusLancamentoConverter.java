@@ -1,4 +1,4 @@
-package com.projetofef.infra;
+package com.infra;
 
 import com.projetofef.domains.enums.StatusLancamento;
 import jakarta.persistence.AttributeConverter;

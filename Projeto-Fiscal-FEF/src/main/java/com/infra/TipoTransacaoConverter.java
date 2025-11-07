@@ -1,4 +1,4 @@
-package com.projetofef.infra;
+package com.infra;
 
 import com.projetofef.domains.enums.TipoTransacao;
 import jakarta.persistence.AttributeConverter;
