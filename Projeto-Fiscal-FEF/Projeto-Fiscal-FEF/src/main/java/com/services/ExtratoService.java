@@ -35,7 +35,7 @@ public class ExtratoService {
         if (inicio != null && fim != null) {
             movimentos = movimentoRepo.findByConta_IdAndDataMovimentoBetween(
                     contaId,
-                    inicio.atStartOfDay(),             // 00:00:00
+                    inicio.atStartOfDay(),             // 00:00:00 - Unico que achei para converter, o localdate estava dando errado
                     fim.atTime(23, 59, 59)            // 23:59:59
             );
         } else {
