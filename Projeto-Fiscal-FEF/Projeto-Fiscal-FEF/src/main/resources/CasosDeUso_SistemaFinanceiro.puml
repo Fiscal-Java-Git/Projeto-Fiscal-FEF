@@ -1,0 +1,60 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Usuário" as Usuario
+
+package "Contas e Cartões" {
+    usecase "Cadastrar Conta Bancária" as UC_CadastrarConta
+    usecase "Atualizar Conta Bancária" as UC_AtualizarConta
+    usecase "Desativar Conta Bancária" as UC_DesativarConta
+    usecase "Cadastrar Cartão de Crédito" as UC_CadastrarCartao
+    usecase "Atualizar Cartão de Crédito" as UC_AtualizarCartao
+    usecase "Desativar Cartão de Crédito" as UC_DesativarCartao
+    usecase "Fechar Fatura Cartão" as UC_FecharFatura
+}
+
+package "Lançamentos" {
+    usecase "Registrar Lançamento" as UC_RegistrarLancamento
+    usecase "Atualizar Lançamento" as UC_AtualizarLancamento
+    usecase "Cancelar Lançamento" as UC_CancelarLancamento
+    usecase "Registrar Pagamento" as UC_RegistrarPagamento
+    usecase "Registrar Recebimento" as UC_RegistrarRecebimento
+}
+
+package "Outros" {
+    usecase "Cadastrar Centro de Custo" as UC_CadastrarCC
+    usecase "Atualizar Centro de Custo" as UC_AtualizarCC
+    usecase "Desativar Centro de Custo" as UC_DesativarCC
+    usecase "Cadastrar Entidade" as UC_CadastrarEntidade
+    usecase "Atualizar Entidade" as UC_AtualizarEntidade
+    usecase "Desativar Entidade" as UC_DesativarEntidade
+    usecase "Registrar Transferência" as UC_RegistrarTransferencia
+}
+
+Usuario --> UC_CadastrarConta
+Usuario --> UC_AtualizarConta
+Usuario --> UC_DesativarConta
+
+Usuario --> UC_CadastrarCartao
+Usuario --> UC_AtualizarCartao
+Usuario --> UC_DesativarCartao
+UC_FecharFatura --> UC_RegistrarLancamento : inclui
+
+Usuario --> UC_RegistrarLancamento
+UC_RegistrarLancamento --> UC_RegistrarPagamento : inclui se pagamento
+UC_RegistrarLancamento --> UC_RegistrarRecebimento : inclui se recebimento
+Usuario --> UC_AtualizarLancamento
+Usuario --> UC_CancelarLancamento
+
+Usuario --> UC_CadastrarCC
+Usuario --> UC_AtualizarCC
+Usuario --> UC_DesativarCC
+
+Usuario --> UC_CadastrarEntidade
+Usuario --> UC_AtualizarEntidade
+Usuario --> UC_DesativarEntidade
+
+Usuario --> UC_RegistrarTransferencia
+UC_RegistrarTransferencia --> UC_RegistrarLancamento : gera movimentos em contas
+@enduml

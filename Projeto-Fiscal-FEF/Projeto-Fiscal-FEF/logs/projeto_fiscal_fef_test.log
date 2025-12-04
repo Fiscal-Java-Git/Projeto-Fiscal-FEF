@@ -1,0 +1,678 @@
+2025-12-02T00:01:53.176-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] c.p.p.ProjetoFiscalFefApplication        : Starting ProjetoFiscalFefApplication using Java 17.0.14 with PID 6980 (C:\Users\Rian_Araújo\IdeaProjects\Projeto-Fiscal-FEF\target\classes started by Rian_Araújo in C:\Users\Rian_Araújo\IdeaProjects\Projeto-Fiscal-FEF)
+2025-12-02T00:01:53.178-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] c.p.p.ProjetoFiscalFefApplication        : The following 1 profile is active: "test"
+2025-12-02T00:01:53.221-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-02T00:01:53.221-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-02T00:01:53.647-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-02T00:01:53.696-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 11 JPA repository interfaces.
+2025-12-02T00:01:54.168-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-02T00:01:54.177-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-02T00:01:54.177-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-02T00:01:54.214-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-02T00:01:54.214-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 992 ms
+2025-12-02T00:01:54.320-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-02T00:01:54.349-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-02T00:01:54.368-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-02T00:01:54.432-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@4860b1f
+2025-12-02T00:01:54.432-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@4860b1f
+2025-12-02T00:01:54.432-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@4860b1f
+2025-12-02T00:01:54.433-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@5b3569cd
+2025-12-02T00:01:54.433-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@5b3569cd
+2025-12-02T00:01:54.434-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@5ed9847a
+2025-12-02T00:01:54.434-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@5ed9847a
+2025-12-02T00:01:54.435-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@3c554057
+2025-12-02T00:01:54.435-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@3c554057
+2025-12-02T00:01:54.435-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@83f6a31
+2025-12-02T00:01:54.435-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@83f6a31
+2025-12-02T00:01:54.435-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@83f6a31
+2025-12-02T00:01:54.436-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@783401fa
+2025-12-02T00:01:54.437-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@783401fa
+2025-12-02T00:01:54.438-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@783401fa
+2025-12-02T00:01:54.438-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@f008176
+2025-12-02T00:01:54.438-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@f008176
+2025-12-02T00:01:54.438-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@57636abd
+2025-12-02T00:01:54.438-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@58361aa3
+2025-12-02T00:01:54.439-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@58361aa3
+2025-12-02T00:01:54.441-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@4cae2fb1
+2025-12-02T00:01:54.441-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@47ae0c63
+2025-12-02T00:01:54.441-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@bd4a0a9
+2025-12-02T00:01:54.442-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@bd4a0a9
+2025-12-02T00:01:54.442-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@bd4a0a9
+2025-12-02T00:01:54.442-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@63df5072
+2025-12-02T00:01:54.442-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@63df5072
+2025-12-02T00:01:54.442-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@63df5072
+2025-12-02T00:01:54.442-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@5eb1281f
+2025-12-02T00:01:54.444-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@5eb1281f
+2025-12-02T00:01:54.444-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@5eb1281f
+2025-12-02T00:01:54.444-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@69cbeabe
+2025-12-02T00:01:54.445-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@69cbeabe
+2025-12-02T00:01:54.445-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@69cbeabe
+2025-12-02T00:01:54.445-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@4734dec6
+2025-12-02T00:01:54.445-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@4734dec6
+2025-12-02T00:01:54.445-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@4734dec6
+2025-12-02T00:01:54.445-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@5ef14a92
+2025-12-02T00:01:54.445-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@5ef14a92
+2025-12-02T00:01:54.445-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@9577083
+2025-12-02T00:01:54.445-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@9577083
+2025-12-02T00:01:54.445-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@3fffe50d
+2025-12-02T00:01:54.445-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@3fffe50d
+2025-12-02T00:01:54.445-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@3fffe50d
+2025-12-02T00:01:54.445-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@5edcdeda
+2025-12-02T00:01:54.446-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@a2daa49
+2025-12-02T00:01:54.446-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@a2daa49
+2025-12-02T00:01:54.446-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@38cc10e7
+2025-12-02T00:01:54.446-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@785b4d7e
+2025-12-02T00:01:54.446-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@785b4d7e
+2025-12-02T00:01:54.446-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@785b4d7e
+2025-12-02T00:01:54.446-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@40c966a1
+2025-12-02T00:01:54.446-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@27d1e313
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@7fc29426
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@5d50061d
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@5d50061d
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@56279f78
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@56279f78
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@7ec637d4
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@154eef8e
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@48f363d4
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@22c5f9ed
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@6d7212f6
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@f22a249
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@5c9c9dba
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@5c9c9dba
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@519b1d55
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@519b1d55
+2025-12-02T00:01:54.447-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@2c034032
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@2c034032
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@36a98f11
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@36a98f11
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@ee0b533
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@ee0b533
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@798700f
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@312ca21e
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@4b87622d
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@4b87622d
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@40c51f43
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@419175c
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@50f17993
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@2097ffaa
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@2097ffaa
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@4840c3fc
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@42f8e5f
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@5f4952a8
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@5f4952a8
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@40bc9c44
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@40bc9c44
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@e2df88c
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@e2df88c
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@e2df88c
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@7608d260
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@7608d260
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@7608d260
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@63c1121b
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@47bbfc9b
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@26338578
+2025-12-02T00:01:54.448-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@26338578
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@1698c80c
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@1698c80c
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@1698c80c
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@7da2510e
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@65652505
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@5fc76494
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@5fc76494
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@fcf1fc8
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@fcf1fc8
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@fcf1fc8
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@608a051e
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@608a051e
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@2c0b5907
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@2c0b5907
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@488c7bd6
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@488c7bd6
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@3f4a1c50
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@3f4a1c50
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@f585c52
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@f585c52
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@79edffdf
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@529469ff
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@3dd35761
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@70a43645
+2025-12-02T00:01:54.449-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@66a12c89
+2025-12-02T00:01:54.453-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@37b399ae
+2025-12-02T00:01:54.453-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@37b399ae
+2025-12-02T00:01:54.454-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@740080f0
+2025-12-02T00:01:54.454-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@46c5ccc5
+2025-12-02T00:01:54.454-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@594b622a
+2025-12-02T00:01:54.454-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@377df67f
+2025-12-02T00:01:54.454-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@478ae760
+2025-12-02T00:01:54.454-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@2f41a8b0
+2025-12-02T00:01:54.454-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@2d99c540
+2025-12-02T00:01:54.454-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@750f1082
+2025-12-02T00:01:54.454-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@65ae58a4
+2025-12-02T00:01:54.572-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-02T00:01:54.591-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-02T00:01:55.649-03:00  WARN 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 28P01
+2025-12-02T00:01:55.650-03:00 ERROR 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : FATAL: password authentication failed for user "postgres"
+2025-12-02T00:01:55.650-03:00  WARN 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.GenericJDBCException: unable to obtain isolated JDBC connection [FATAL: password authentication failed for user "postgres"] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:334) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:973) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.projetofef.projetofiscalfef.ProjetoFiscalFefApplication.main(ProjetoFiscalFefApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.7.jar:3.5.7]
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:778) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:234) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:279) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.Driver.makeConnection(Driver.java:448) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.8.jar:42.7.8]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.3.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	... 40 common frames omitted
+
+2025-12-02T00:01:55.663-03:00  WARN 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-02T00:01:55.670-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 12.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-02T00:01:55.674-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@5904b4d0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@7ae1f95)
+2025-12-02T00:01:55.674-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@14d07e99) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2b12e66b)
+2025-12-02T00:01:55.675-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2004, BlobTypeDescriptor(BLOB_BINDING)) replaced previous registration(BlobTypeDescriptor(DEFAULT))
+2025-12-02T00:01:55.676-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(CLOB_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-12-02T00:01:55.683-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration JAVA_OBJECT -> org.hibernate.type.JavaObjectType@6da2420e
+2025-12-02T00:01:55.683-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@6da2420e
+2025-12-02T00:01:55.683-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Type registration key [java.lang.Object] overrode previous entry : `org.hibernate.type.JavaObjectType@37b399ae`
+2025-12-02T00:01:55.685-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-12-02T00:01:55.685-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-12-02T00:01:55.685-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-12-02T00:01:55.687-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
+2025-12-02T00:01:55.687-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-12-02T00:01:55.687-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-12-02T00:01:55.687-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
+2025-12-02T00:01:55.687-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-12-02T00:01:55.687-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-12-02T00:01:55.687-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
+2025-12-02T00:01:55.687-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-12-02T00:01:55.687-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-12-02T00:01:55.688-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3609f799] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@4d4ed757]
+2025-12-02T00:01:56.454-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-02T00:01:56.455-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3609f799] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@16823dec]
+2025-12-02T00:01:56.465-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-02T00:01:57.499-03:00  WARN 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 28P01
+2025-12-02T00:01:57.499-03:00 ERROR 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : FATAL: password authentication failed for user "postgres"
+2025-12-02T00:01:57.500-03:00 TRACE 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@16823dec] for TypeConfiguration
+2025-12-02T00:01:57.500-03:00 DEBUG 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@52f6df72] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@16823dec]
+2025-12-02T00:01:57.502-03:00 ERROR 6980 --- [Projeto-Fiscal-FEF] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+2025-12-02T00:01:57.503-03:00  WARN 6980 --- [Projeto-Fiscal-FEF] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+2025-12-02T00:01:57.504-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-12-02T00:01:57.512-03:00  INFO 6980 --- [Projeto-Fiscal-FEF] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-02T00:01:57.523-03:00 ERROR 6980 --- [Projeto-Fiscal-FEF] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:973) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.projetofef.projetofiscalfef.ProjetoFiscalFefApplication.main(ProjetoFiscalFefApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.7.jar:3.5.7]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 20 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:93) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.12.jar:6.2.12]
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:778) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:234) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:279) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.Driver.makeConnection(Driver.java:448) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.8.jar:42.7.8]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.3.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	... 44 common frames omitted
+
+2025-12-02T00:05:52.672-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] c.p.p.ProjetoFiscalFefApplication        : Starting ProjetoFiscalFefApplication using Java 17.0.14 with PID 11228 (C:\Users\Rian_Araújo\IdeaProjects\Projeto-Fiscal-FEF\target\classes started by Rian_Araújo in C:\Users\Rian_Araújo\IdeaProjects\Projeto-Fiscal-FEF)
+2025-12-02T00:05:52.674-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] c.p.p.ProjetoFiscalFefApplication        : The following 1 profile is active: "test"
+2025-12-02T00:05:52.730-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-02T00:05:52.731-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-02T00:05:53.302-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-02T00:05:53.357-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 11 JPA repository interfaces.
+2025-12-02T00:05:53.822-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-02T00:05:53.831-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-02T00:05:53.831-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-02T00:05:53.870-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-02T00:05:53.870-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1139 ms
+2025-12-02T00:05:53.973-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-02T00:05:54.000-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-02T00:05:54.021-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-02T00:05:54.085-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@21cf3816
+2025-12-02T00:05:54.086-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@21cf3816
+2025-12-02T00:05:54.089-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@21cf3816
+2025-12-02T00:05:54.089-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@5cf5a6e9
+2025-12-02T00:05:54.090-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@5cf5a6e9
+2025-12-02T00:05:54.091-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@1d44c7c8
+2025-12-02T00:05:54.091-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@1d44c7c8
+2025-12-02T00:05:54.092-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@4e8e1800
+2025-12-02T00:05:54.092-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@4e8e1800
+2025-12-02T00:05:54.092-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@16d9864f
+2025-12-02T00:05:54.092-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@16d9864f
+2025-12-02T00:05:54.092-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@16d9864f
+2025-12-02T00:05:54.093-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@676ab893
+2025-12-02T00:05:54.094-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@676ab893
+2025-12-02T00:05:54.094-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@676ab893
+2025-12-02T00:05:54.094-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@386a0d46
+2025-12-02T00:05:54.094-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@386a0d46
+2025-12-02T00:05:54.094-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@a7684f8
+2025-12-02T00:05:54.094-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@c12a656
+2025-12-02T00:05:54.094-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@c12a656
+2025-12-02T00:05:54.094-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@36d6ad0c
+2025-12-02T00:05:54.094-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@5ebe86ad
+2025-12-02T00:05:54.095-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@60d188c6
+2025-12-02T00:05:54.095-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@60d188c6
+2025-12-02T00:05:54.095-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@60d188c6
+2025-12-02T00:05:54.095-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@7968a29c
+2025-12-02T00:05:54.095-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@7968a29c
+2025-12-02T00:05:54.095-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@7968a29c
+2025-12-02T00:05:54.095-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@7ad5de70
+2025-12-02T00:05:54.095-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@7ad5de70
+2025-12-02T00:05:54.096-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@7ad5de70
+2025-12-02T00:05:54.096-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@5074b469
+2025-12-02T00:05:54.096-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@5074b469
+2025-12-02T00:05:54.096-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@5074b469
+2025-12-02T00:05:54.096-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@3c8f9119
+2025-12-02T00:05:54.096-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@3c8f9119
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@3c8f9119
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@cfa856
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@cfa856
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@543dd061
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@543dd061
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@211fe173
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@211fe173
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@211fe173
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@6158bb10
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@1ca82275
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@1ca82275
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@262c4759
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@78e62e96
+2025-12-02T00:05:54.097-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@78e62e96
+2025-12-02T00:05:54.098-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@78e62e96
+2025-12-02T00:05:54.098-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@5cc28aa1
+2025-12-02T00:05:54.098-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@124b0c6
+2025-12-02T00:05:54.098-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@45762934
+2025-12-02T00:05:54.098-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@c2d2d92
+2025-12-02T00:05:54.098-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@c2d2d92
+2025-12-02T00:05:54.098-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@44f22934
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@44f22934
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@607413ec
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@14bfb95f
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@711b47e7
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@24f56b79
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@645ee778
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@dc2cfed
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@26cd95cd
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@26cd95cd
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@296c9cce
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@296c9cce
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@3a1adbbc
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@3a1adbbc
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@21bcc6b5
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@21bcc6b5
+2025-12-02T00:05:54.099-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@6b955cb2
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@6b955cb2
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@265237e2
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@4a79cfaf
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@d37313b
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@d37313b
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@4c868ce3
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@7bdc5fb6
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@7fdce3d5
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@4bd6bbfc
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@4bd6bbfc
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@33cfd7f1
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@2a771fd1
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@322d8301
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@322d8301
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@4c5ad7e3
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@4c5ad7e3
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@167f1c6
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@167f1c6
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@167f1c6
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@13fcefac
+2025-12-02T00:05:54.100-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@13fcefac
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@13fcefac
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@4d975359
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@57e870c7
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@693f423d
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@693f423d
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@1d4a5139
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@1d4a5139
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@1d4a5139
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@6ab0c452
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@7e4aff8b
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@6d7774d5
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@6d7774d5
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@22fb23db
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@22fb23db
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@22fb23db
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@4e05e182
+2025-12-02T00:05:54.101-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@4e05e182
+2025-12-02T00:05:54.102-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@679af96e
+2025-12-02T00:05:54.102-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@679af96e
+2025-12-02T00:05:54.102-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@319df894
+2025-12-02T00:05:54.102-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@319df894
+2025-12-02T00:05:54.102-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@4a83f087
+2025-12-02T00:05:54.102-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@4a83f087
+2025-12-02T00:05:54.102-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@2beb01a4
+2025-12-02T00:05:54.102-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@2beb01a4
+2025-12-02T00:05:54.102-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@1b0adc3e
+2025-12-02T00:05:54.102-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@450dce93
+2025-12-02T00:05:54.102-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@105f197d
+2025-12-02T00:05:54.102-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@63caccf3
+2025-12-02T00:05:54.102-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@2eec1798
+2025-12-02T00:05:54.105-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@6c5e7f8f
+2025-12-02T00:05:54.105-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@6c5e7f8f
+2025-12-02T00:05:54.106-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@6148d2bb
+2025-12-02T00:05:54.106-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@5511e7a9
+2025-12-02T00:05:54.106-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@222fb78f
+2025-12-02T00:05:54.106-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@5caf950
+2025-12-02T00:05:54.106-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@22303e58
+2025-12-02T00:05:54.106-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@78c6a918
+2025-12-02T00:05:54.106-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@278afa40
+2025-12-02T00:05:54.106-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@75589798
+2025-12-02T00:05:54.106-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@56b9a595
+2025-12-02T00:05:54.223-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-02T00:05:54.246-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-02T00:05:55.319-03:00  WARN 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 28P01
+2025-12-02T00:05:55.319-03:00 ERROR 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : FATAL: password authentication failed for user "postgres"
+2025-12-02T00:05:55.320-03:00  WARN 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.GenericJDBCException: unable to obtain isolated JDBC connection [FATAL: password authentication failed for user "postgres"] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:334) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:973) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.projetofef.projetofiscalfef.ProjetoFiscalFefApplication.main(ProjetoFiscalFefApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.7.jar:3.5.7]
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:778) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:234) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:279) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.Driver.makeConnection(Driver.java:448) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.8.jar:42.7.8]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.3.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	... 40 common frames omitted
+
+2025-12-02T00:05:55.333-03:00  WARN 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-02T00:05:55.341-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 12.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-02T00:05:55.345-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@3801700d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@561898aa)
+2025-12-02T00:05:55.346-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@c69daf4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@43165b82)
+2025-12-02T00:05:55.347-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2004, BlobTypeDescriptor(BLOB_BINDING)) replaced previous registration(BlobTypeDescriptor(DEFAULT))
+2025-12-02T00:05:55.347-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(CLOB_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-12-02T00:05:55.352-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration JAVA_OBJECT -> org.hibernate.type.JavaObjectType@15e39312
+2025-12-02T00:05:55.352-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@15e39312
+2025-12-02T00:05:55.352-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Type registration key [java.lang.Object] overrode previous entry : `org.hibernate.type.JavaObjectType@6c5e7f8f`
+2025-12-02T00:05:55.355-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-12-02T00:05:55.355-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-12-02T00:05:55.355-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-12-02T00:05:55.356-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
+2025-12-02T00:05:55.357-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-12-02T00:05:55.357-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-12-02T00:05:55.357-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
+2025-12-02T00:05:55.357-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-12-02T00:05:55.357-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-12-02T00:05:55.357-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
+2025-12-02T00:05:55.358-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-12-02T00:05:55.358-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-12-02T00:05:55.358-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@74afd312] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@59f2a92]
+2025-12-02T00:05:56.109-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-02T00:05:56.109-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@74afd312] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@5cd69bf5]
+2025-12-02T00:05:56.121-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-02T00:05:57.150-03:00  WARN 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 28P01
+2025-12-02T00:05:57.150-03:00 ERROR 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : FATAL: password authentication failed for user "postgres"
+2025-12-02T00:05:57.152-03:00 TRACE 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@5cd69bf5] for TypeConfiguration
+2025-12-02T00:05:57.152-03:00 DEBUG 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@57d66851] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@5cd69bf5]
+2025-12-02T00:05:57.155-03:00 ERROR 11228 --- [Projeto-Fiscal-FEF] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+2025-12-02T00:05:57.155-03:00  WARN 11228 --- [Projeto-Fiscal-FEF] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+2025-12-02T00:05:57.157-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-12-02T00:05:57.165-03:00  INFO 11228 --- [Projeto-Fiscal-FEF] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-02T00:05:57.176-03:00 ERROR 11228 --- [Projeto-Fiscal-FEF] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:973) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.projetofef.projetofiscalfef.ProjetoFiscalFefApplication.main(ProjetoFiscalFefApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.7.jar:3.5.7]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 20 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:93) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.12.jar:6.2.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.12.jar:6.2.12]
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:778) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:234) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:279) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.Driver.makeConnection(Driver.java:448) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.8.jar:42.7.8]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.3.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.6.33.Final.jar:6.6.33.Final]
+	... 44 common frames omitted
+

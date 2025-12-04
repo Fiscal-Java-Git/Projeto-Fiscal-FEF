@@ -1,0 +1,40 @@
+sequencia:
+
+@startuml
+actor Usuario
+participant Sistema
+participant ContaBancaria
+participant CartaoCredito
+participant FaturaCartao
+participant Lancamento
+participant Pagamento
+participant Recebimento
+participant Transferencia
+
+== Criar Lançamento ==
+Usuario -> Sistema : Criar Lancamento(tipo, valor, centro, entidade, meio)
+Sistema -> Lancamento : Salvar dados do lançamento
+Sistema -> ContaBancaria : Vincular se pagamento for conta
+Sistema -> CartaoCredito : Vincular se pagamento for cartão
+Sistema -> FaturaCartao : Atualizar fatura se meio = cartão
+Sistema -> Lancamento : Confirma criação
+
+== Registrar Pagamento ==
+Usuario -> Sistema : Registrar Pagamento(lancamento, valor, contaOrigem)
+Sistema -> Pagamento : Criar pagamento
+Sistema -> Lancamento : Atualizar valorBaixado e status
+Sistema -> ContaBancaria : Debitar valor da contaOrigem
+
+== Registrar Recebimento ==
+Usuario -> Sistema : Registrar Recebimento(lancamento, valor, contaDestino)
+Sistema -> Recebimento : Criar recebimento
+Sistema -> Lancamento : Atualizar valorBaixado e status
+Sistema -> ContaBancaria : Creditar valor na contaDestino
+
+== Transferência entre contas ==
+Usuario -> Sistema : Criar Transferencia(contaOrigem, contaDestino, valor)
+Sistema -> Transferencia : Salvar transferência
+Sistema -> ContaBancaria : Debitar origem
+Sistema -> ContaBancaria : Creditar destino
+
+@enduml

@@ -1,0 +1,160 @@
+de classe:
+
+@startuml
+skinparam classAttributeIconSize 0
+skinparam classFontSize 12
+skinparam classArrowColor black
+
+' ================= Classes =================
+
+class Usuario {
+    +Long id
+    +String nome
+    +String email
+    +LocalDateTime criadoEm
+    +LocalDateTime atualizadoEm
+}
+
+class CartaoCredito {
+    +Long id
+    +String bandeira
+    +String emissor
+    +String apelido
+    +Integer fechamentoFaturaDia
+    +Integer vencimentoFaturaDia
+    +Boolean ativo
+    +LocalDateTime criadoEm
+    +LocalDateTime atualizadoEm
+}
+
+class FaturaCartao {
+    +Long id
+    +LocalDateTime competencia
+    +LocalDateTime dataFechamento
+    +LocalDateTime dataVencimento
+    +BigDecimal valorTotal
+    +StatusFatura status
+    +LocalDateTime criadoEm
+    +LocalDateTime atualizadoEm
+}
+
+class Lancamento {
+    +Long id
+    +TipoLancamento tipo
+    +String descricao
+    +BigDecimal valor
+    +LocalDateTime dataCompetencia
+    +LocalDateTime dataVencimento
+    +MeioPagamento meioPagamento
+    +StatusLancamento status
+    +BigDecimal valorBaixado
+    +LocalDateTime criadoEm
+    +LocalDateTime atualizadoEm
+}
+
+class ContaBancaria {
+    +Long id
+    +String instituicao
+    +String agencia
+    +String numero
+    +String apelido
+    +BigDecimal saldoInicial
+    +LocalDateTime dataSaldoInicial
+    +Boolean ativa
+    +LocalDateTime criadoEm
+    +LocalDateTime atualizadoEm
+}
+
+class MovimentoConta {
+    +Long id
+    +TipoTransacao tipo
+    +BigDecimal valor
+    +String historico
+    +Long referenciaId
+    +String referenciaTipo
+    +LocalDateTime dataMovimento
+    +LocalDateTime criadoEm
+    +LocalDateTime atualizadoEm
+}
+
+class Pagamento {
+    +Long id
+    +LocalDateTime dataPagamento
+    +BigDecimal valorPago
+    +String observacao
+    +LocalDateTime criadoEm
+    +LocalDateTime atualizadoEm
+}
+
+class Recebimento {
+    +Long id
+    +LocalDate dataRecebimento
+    +BigDecimal valor
+    +String observacao
+}
+
+class Transferencia {
+    +Long id
+    +LocalDateTime data
+    +BigDecimal valor
+    +String observacao
+}
+
+class CentroCusto {
+    +Long id
+    +String nome
+    +String codigo
+    +Boolean ativo
+    +LocalDateTime criadoEm
+    +LocalDateTime atualizadoEm
+}
+
+class Entidade {
+    +Long id
+    +String nome
+    +String documento
+    +String tipo
+    +Boolean ativo
+    +LocalDateTime criadoEm
+    +LocalDateTime atualizadoEm
+}
+
+' ================= Relações =================
+
+' Usuario
+Usuario "1" o-- "0..*" CartaoCredito : possui
+Usuario "1" o-- "0..*" ContaBancaria : possui
+Usuario "1" o-- "0..*" Lancamento : realiza
+Usuario "1" o-- "0..*" Transferencia : realiza
+Usuario "1" o-- "0..*" CentroCusto : possui
+Usuario "1" o-- "0..*" Entidade : possui
+
+' CartaoCredito
+CartaoCredito "1" *-- "0..*" FaturaCartao : gera
+
+' FaturaCartao
+FaturaCartao "1" *-- "0..*" Lancamento : possui
+
+' Lancamento
+Lancamento "1" o-- "0..*" Pagamento : gera
+Lancamento "1" o-- "0..*" Recebimento : gera
+Lancamento "0..1" --> "0..1" Entidade : vincula
+Lancamento "0..1" --> "0..1" CentroCusto : vincula
+Lancamento "0..1" --> "0..1" ContaBancaria : vincula
+Lancamento "0..1" --> "0..1" CartaoCredito : vincula
+Lancamento "0..1" --> "0..1" FaturaCartao : vincula
+
+' ContaBancaria
+ContaBancaria "1" *-- "0..*" MovimentoConta : registra
+ContaBancaria "0..1" --> "0..*" Lancamento : vincula
+ContaBancaria "1" o-- "0..*" Recebimento : destino
+ContaBancaria "1" o-- "0..*" Pagamento : origem
+ContaBancaria "1" o-- "0..*" Transferencia : origem
+ContaBancaria "1" o-- "0..*" Transferencia : destino
+
+' Transferencia
+Transferencia "1" --> "1" Usuario : realizada por
+Transferencia "1" --> "1" ContaBancaria : origem
+Transferencia "1" --> "1" ContaBancaria : destino
+
+@enduml
