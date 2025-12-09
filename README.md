@@ -101,7 +101,9 @@ StatusFatura
 analise
 
 🌐 API REST – Endpoints Principais
+
 Contas Bancárias
+
 POST   /api/v1/contas
 GET    /api/v1/contas
 GET    /api/v1/contas/{id}
@@ -110,6 +112,7 @@ DELETE /api/v1/contas/{id}
 GET    /api/v1/contas/{id}/extrato?inicio&fim&modo=
 
 Cartões e Faturas
+
 POST /api/v1/cartoes
 GET  /api/v1/cartoes
 GET  /api/v1/cartoes/{id}/faturas
@@ -117,6 +120,7 @@ POST /api/v1/cartoes/{id}/faturas/fechamento
 POST /api/v1/cartoes/{id}/faturas/{faturaId}/pagar
 
 Lançamentos
+
 POST /api/v1/lancamentos
 GET  /api/v1/lancamentos?tipo&status&inicio&fim
 GET  /api/v1/lancamentos/{id}
@@ -124,14 +128,17 @@ PUT  /api/v1/lancamentos/{id}
 POST /api/v1/lancamentos/{id}/cancelar
 
 Pagamentos / Recebimentos
+
 POST /api/v1/lancamentos/{id}/pagamentos
 POST /api/v1/lancamentos/{id}/recebimentos
 
 Transferências
+
 POST /api/v1/transferencias
 GET  /api/v1/transferencias?inicio&fim&contaId
 
 Relatórios
+
 GET /api/v1/relatorios/extrato
 GET /api/v1/relatorios/contas-a-pagar
 GET /api/v1/relatorios/contas-a-receber
