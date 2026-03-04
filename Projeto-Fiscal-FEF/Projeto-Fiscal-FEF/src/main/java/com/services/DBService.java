@@ -186,6 +186,21 @@ public class DBService {
         l2.setValorBaixado(BigDecimal.ZERO);
         lancamentoRepo.save(l2);
 
+        Lancamento lExtrato = new Lancamento();
+        lExtrato.setTipo(TipoLancamento.RECEBER);
+        lExtrato.setDescricao("Recebimento Teste Extrato");
+        lExtrato.setUsuario(u1);
+        lExtrato.setEntidade(e2);
+        lExtrato.setCentroCusto(c2);
+        lExtrato.setValor(new BigDecimal("1200.00"));
+        lExtrato.setDataCompetencia(LocalDateTime.of(2025, 5, 10, 0, 0));
+        lExtrato.setDataVencimento(LocalDateTime.of(2025, 5, 15, 0, 0));
+        lExtrato.setMeioPagamento(MeioPagamento.CONTA);
+        lExtrato.setContaBancaria(conta2);
+        lExtrato.setStatus(StatusLancamento.BAIXADO);
+        lExtrato.setValorBaixado(new BigDecimal("1200.00"));
+
+        lancamentoRepo.save(lExtrato);
         MovimentoConta m1 = new MovimentoConta();
         m1.setConta(conta1);
         m1.setTipo(TipoTransacao.DEBITO);
@@ -230,6 +245,7 @@ public class DBService {
         t1.setValor(new BigDecimal("200.00"));
         t1.setObservacao("Transferência entre contas");
         transferenciaRepo.save(t1);
+
 
     }
 }
